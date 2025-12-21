@@ -98,6 +98,12 @@ figcaption {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+.freestyle video:hover,
+.freestyle audio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ffcc00, 0 0 40px #ffd700;
+}
+
 .freestyle figcaption {
   font-size: 16px;
   font-weight: bold;
