@@ -1,11 +1,13 @@
+/* Style global */
 body {
   font-family: Arial, sans-serif;
-  background-color: #111; /* fond sombre pour contraste */
+  background-color: #111; /* fond sombre */
   color: #fff;
   margin: 0;
   padding: 0;
 }
 
+/* Header & Footer */
 header, footer {
   text-align: center;
   padding: 20px;
@@ -18,33 +20,43 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: #ffd700; /* doré */
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Galerie responsive */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
   padding: 30px;
-  background: linear-gradient(135deg, #000, #333); /* fond urbain sombre */
+  background: linear-gradient(135deg, #000, #333); /* ambiance sombre */
 }
 
 .gallery img {
   width: 100%;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 0 15px #ffd700; /* halo doré */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   animation: glowPulse 3s infinite alternate; /* effet animé */
+  display: block;
+  margin: 0 auto;
 }
 
 .gallery img:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 25px #ffcc00, 0 0 40px #ffd700; /* effet lumineux au survol */
+  box-shadow: 0 0 25px #ffcc00, 0 0 40px #ffd700;
 }
 
 figcaption {
@@ -52,44 +64,36 @@ figcaption {
   margin-top: 10px;
   font-size: 15px;
   font-weight: bold;
-  color: #ffcc66; /* légendes dorées */
+  color: #ffcc66; /* doré */
   text-shadow: 1px 1px 3px #000;
+  background: linear-gradient(90deg, #ffd700, #ff6600, #ffd700);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineText 4s linear infinite;
 }
 
-/* Animation pulsante dorée */
-@keyframes glowPulse {
-  from {
-    box-shadow: 0 0 10px #ffd700;
-  }
-  to {
-    box-shadow: 0 0 25px #ffcc00, 0 0 40px #ffd700;
-  }
-}
-
-@keyframe glowPulse 
-/* Animation pulsante dorée */
-@keyframes glowPulse {
-  from {
-    box-shadow: 0 0 10px #ffd700;
-  }
-  to {
-    box-shadow: 0 0 25px #ffcc00, 0 0 40px #ffd700;
-  }
-}
-
+/* Section freestyle */
 .freestyle {
   padding: 30px;
-  background: linear-gradient(135deg, #000, #222); /* ambiance sombre */
-  color: #ffd700; /* doré */
+  background: linear-gradient(135deg, #111, #222);
   text-align: center;
 }
 
-.freestyle video {
+.freestyle h2 {
+  color: #ffd700;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 20px;
+}
+
+.freestyle video,
+.freestyle audio {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 12px;
   box-shadow: 0 0 15px #ffd700;
-  margin-bottom: 10px;
+  margin: 0 auto 15px auto;
+  display: block;
 }
 
 .freestyle figcaption {
@@ -100,15 +104,35 @@ figcaption {
   margin-bottom: 30px;
 }
 
-.gallery img,
-.freestyle video {
-  width: 100%;
-  height: auto;
-  max-width: 500px; /* limite sur grand écran */
-  border-radius: 12px;
-  box-shadow: 0 0 15px #ffd700;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  animation: glowPulse 3s infinite alternate;
-  display: block;
-  margin: 0 auto;
+/* Animations */
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 10px #ffd700;
+  }
+  to {
+    box-shadow: 0 0 25px #ffcc00, 0 0 40px #ffd700;
+  }
+}
+
+@keyframes shineText {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Adaptabilité mobile/tablette */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* une seule colonne sur mobile */
+  }
+
+  .freestyle video,
+  .freestyle audio {
+    max-width: 100%;
+  }
 }
