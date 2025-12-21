@@ -99,3 +99,16 @@ figcaption {
   text-shadow: 1px 1px 3px #000;
   margin-bottom: 30px;
 }
+
+.gallery img,
+.freestyle video {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* limite sur grand écran */
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ffd700;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: glowPulse 3s infinite alternate;
+  display: block;
+  margin: 0 auto;
+}
