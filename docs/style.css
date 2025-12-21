@@ -122,6 +122,8 @@ figcaption {
   }
 }
 
+transform: scale(1.01); /* léger zoom permanent */
+
 @keyframes shineText {
   to {
     background-position: 200% center;
