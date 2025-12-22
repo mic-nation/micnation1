@@ -214,3 +214,14 @@ transform: scale(1.01); /* léger zoom permanent */
   color: #ffcc00;
   font-style: italic;
 }
+
+.btn-blue {
+  color: #1e90ff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btn-blue:hover {
+  color: #00bfff;
+}
