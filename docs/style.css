@@ -365,3 +365,14 @@ header h1 {
   color: #fff;
   text-align: center;
 }
+
+/* Transition fluide entre les pages */
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Quand la page est chargée, on affiche doucement */
+body.loaded {
+  opacity: 1;
+}
