@@ -288,3 +288,16 @@ transform: scale(1.01); /* léger zoom permanent */
   margin-bottom: 8px;
   color: #ffcc66;
 }
+
+/* Style normal du lien Artistes */
+nav ul li a[href="artistes.html"] {
+  color: #fff; /* couleur de base */
+  font-weight: bold;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+/* Animation au survol */
+nav ul li a[href="artistes.html"]:hover {
+  color: red; /* devient rouge */
+  text-shadow: 0 0 10px red, 0 0 20px darkred;
+}
