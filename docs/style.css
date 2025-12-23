@@ -382,9 +382,21 @@ nav ul li a[href="galerie.html"] {
   font-weight: bold;
 }
 
+@keyframes pulse-blue {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: blue; text-shadow: 0 0 15px blue; }
+  100% { color: #fff; text-shadow: none; }
+}
+
 nav ul li a[href="freestyle.html"] {
   animation: pulse-yellow 2.5s infinite;
   font-weight: bold;
+}
+
+@keyframes pulse-yellow {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: yellow; text-shadow: 0 0 15px yellow; }
+  100% { color: #fff; text-shadow: none; }
 }
 
 nav ul li a[href="articles.html"] {
@@ -392,7 +404,19 @@ nav ul li a[href="articles.html"] {
   font-weight: bold;
 }
 
+@keyframes pulse-green {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: hreen; text-shadow: 0 0 15px green; }
+  100% { color: #fff; text-shadow: none; }
+}
+
 nav ul li a[href="menu.html"] {
   animation: pulse-soft 2.5s infinite;
   font-weight: bold;
+}
+
+@keyframes pulse-soft {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: soft; text-shadow: 0 0 15px soft; }
+  100% { color: #fff; text-shadow: none; }
 }
