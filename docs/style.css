@@ -312,3 +312,27 @@ nav ul li a[href="artistes.html"] {
   animation: pulse-red 2s infinite;
   font-weight: bold;
 }
+
+@keyframes pulse-title {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: red; text-shadow: 0 0 15px red; }
+  100% { color: #fff; text-shadow: none; }
+}
+
+header h1 {
+  animation: pulse-title 2.5s infinite;
+  font-size: 32px;
+  text-align: center;
+}
+
+@keyframes glow-gold {
+  0% { text-shadow: 0 0 5px #ffd700; }
+  50% { text-shadow: 0 0 20px #ffcc00; }
+  100% { text-shadow: 0 0 5px #ffd700; }
+}
+
+.artiste h2,
+.artiste h3 {
+  color: #ffd700;
+  animation: glow-gold 3s infinite;
+}
