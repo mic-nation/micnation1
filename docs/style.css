@@ -225,3 +225,66 @@ transform: scale(1.01); /* léger zoom permanent */
 .btn-blue:hover {
   color: #00bfff;
 }
+
+/* Section artiste */
+.artiste {
+  background: #111;
+  color: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 0 20px #ffd700;
+}
+
+/* En-tête artiste */
+.artiste header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.artiste img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 15px 0;
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.artiste h2 {
+  color: #ffcc00;
+  font-size: 28px;
+}
+
+.artiste .surnom {
+  font-style: italic;
+  color: #ffcc66;
+}
+
+.artiste blockquote {
+  font-size: 16px;
+  color: #1e90ff;
+  margin: 10px auto;
+  font-style: italic;
+}
+
+/* Sous-sections */
+.artiste section {
+  margin-bottom: 25px;
+}
+
+.artiste h3 {
+  color: #ffd700;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+.artiste ul {
+  list-style: none;
+  padding: 0;
+}
+
+.artiste li {
+  margin-bottom: 8px;
+  color: #ffcc66;
+}
