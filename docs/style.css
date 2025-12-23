@@ -336,3 +336,8 @@ header h1 {
   color: #ffd700;
   animation: glow-gold 3s infinite;
 }
+
+.titre-galerie {
+  animation: pulse-blue 2.5s infinite;
+  color: #fff;
+}
