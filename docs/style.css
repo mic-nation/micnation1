@@ -341,3 +341,15 @@ header h1 {
   animation: pulse-blue 2.5s infinite;
   color: #fff;
 }
+
+@keyframes pulse-green {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: green; text-shadow: 0 0 15px green; }
+  100% { color: #fff; text-shadow: none; }
+}
+
+.titre-articles {
+  animation: pulse-green 2.5s infinite;
+  color: #fff;
+  text-align: center;
+}
