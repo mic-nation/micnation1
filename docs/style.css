@@ -377,15 +377,10 @@ body.loaded {
   opacity: 1;
 }
 
+/* Liens du menu avec leurs pulses */
 nav ul li a[href="galerie.html"] {
   animation: pulse-blue 2.5s infinite;
   font-weight: bold;
-}
-
-@keyframes pulse-blue {
-  0% { color: #fff; text-shadow: none; }
-  50% { color: blue; text-shadow: 0 0 15px blue; }
-  100% { color: #fff; text-shadow: none; }
 }
 
 nav ul li a[href="freestyle.html"] {
@@ -393,21 +388,9 @@ nav ul li a[href="freestyle.html"] {
   font-weight: bold;
 }
 
-@keyframes pulse-yellow {
-  0% { color: #fff; text-shadow: none; }
-  50% { color: yellow; text-shadow: 0 0 15px yellow; }
-  100% { color: #fff; text-shadow: none; }
-}
-
 nav ul li a[href="articles.html"] {
   animation: pulse-green 2.5s infinite;
   font-weight: bold;
-}
-
-@keyframes pulse-green {
-  0% { color: #fff; text-shadow: none; }
-  50% { color: hreen; text-shadow: 0 0 15px green; }
-  100% { color: #fff; text-shadow: none; }
 }
 
 nav ul li a[href="menu.html"] {
@@ -415,8 +398,28 @@ nav ul li a[href="menu.html"] {
   font-weight: bold;
 }
 
-@keyframes pulse-soft {
+/* Animations */
+@keyframes pulse-blue {
   0% { color: #fff; text-shadow: none; }
-  50% { color: soft; text-shadow: 0 0 15px soft; }
+  50% { color: blue; text-shadow: 0 0 15px blue; }
   100% { color: #fff; text-shadow: none; }
+}
+
+@keyframes pulse-yellow {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: #ffd700; text-shadow: 0 0 15px #ffcc00; }
+  100% { color: #fff; text-shadow: none; }
+}
+
+@keyframes pulse-green {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: green; text-shadow: 0 0 15px green; }
+  100% { color: #fff; text-shadow: none; }
+}
+
+/* Pulse neutre et doux pour Menu */
+@keyframes pulse-soft {
+  0% { color: inherit; text-shadow: none; }
+  50% { color: inherit; text-shadow: 0 0 12px #ffffff; }
+  100% { color: inherit; text-shadow: none; }
 }
