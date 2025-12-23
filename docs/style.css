@@ -301,3 +301,14 @@ nav ul li a[href="artistes.html"]:hover {
   color: red; /* devient rouge */
   text-shadow: 0 0 10px red, 0 0 20px darkred;
 }
+
+@keyframes pulse-red {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: red; text-shadow: 0 0 15px red; }
+  100% { color: #fff; text-shadow: none; }
+}
+
+nav ul li a[href="artistes.html"] {
+  animation: pulse-red 2s infinite;
+  font-weight: bold;
+}
