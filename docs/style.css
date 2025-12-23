@@ -376,3 +376,23 @@ body {
 body.loaded {
   opacity: 1;
 }
+
+nav ul li a[href="galerie.html"] {
+  animation: pulse-blue 2.5s infinite;
+  font-weight: bold;
+}
+
+nav ul li a[href="freestyle.html"] {
+  animation: pulse-yellow 2.5s infinite;
+  font-weight: bold;
+}
+
+nav ul li a[href="articles.html"] {
+  animation: pulse-green 2.5s infinite;
+  font-weight: bold;
+}
+
+nav ul li a[href="menu.html"] {
+  animation: pulse-soft 2.5s infinite;
+  font-weight: bold;
+}
