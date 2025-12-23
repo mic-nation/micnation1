@@ -353,3 +353,15 @@ header h1 {
   color: #fff;
   text-align: center;
 }
+
+@keyframes pulse-yellow {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: #ffd700; text-shadow: 0 0 15px #ffcc00; }
+  100% { color: #fff; text-shadow: none; }
+}
+
+.titre-freestyle {
+  animation: pulse-yellow 2.5s infinite;
+  color: #fff;
+  text-align: center;
+}
