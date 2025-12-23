@@ -452,3 +452,14 @@ nav ul li a[href="menu.html"] {
 .contact-form button:hover {
   opacity: 0.8;
 }
+
+nav ul li a[href="contact.html"] {
+  animation: pulse-contact 2.5s infinite;
+  font-weight: bold;
+}
+
+@keyframes pulse-contact {
+  0% { color: #fff; text-shadow: none; }
+  50% { color: #00ffff; text-shadow: 0 0 15px #00ffff; }
+  100% { color: #fff; text-shadow: none; }
+}
