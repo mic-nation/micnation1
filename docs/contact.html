@@ -2,20 +2,43 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Contact MicNation</title>
+  <title>Contacter MicNation</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f9f9f9;
+      color: #222;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    p.intro {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 
 <body>
-
-  <h2>Contactez MicNation</h2>
+  <h2>Contacter MicNation 📩</h2>
+  <p class="intro">Remplissez ce formulaire pour nous envoyer un message. Nous vous répondrons rapidement.</p>
 
   <!-- Formulaire de contact MicNation -->
-  <form
+  <form 
     action="https://formspree.io/f/mvzplaad"
     method="POST"
     class="contact-form"
   >
+    <label>
+      Nom :
+      <input type="text" name="nom" required>
+    </label>
 
     <label>
       Email :
@@ -27,11 +50,9 @@
       <textarea name="message" rows="5" required></textarea>
     </label>
 
-<input type="hidden" name="_redirect" value="Merci.html">
+    <input type="hidden" name="_redirect" value="Merci.html">
 
     <button type="submit">Envoyer</button>
-
   </form>
-
 </body>
 </html>
