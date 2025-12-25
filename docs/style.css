@@ -464,7 +464,22 @@ nav ul li a[href="contact.html"] {
   100% { color: #fff; text-shadow: none; }
 }
 
-body {
-  background: #f9f9f9;
-  color: #222;
-}
+<style>
+  body {
+    background: #f9f9f9;
+    color: #222;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  p.intro {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    text-align: center;
+  }
+</style>
