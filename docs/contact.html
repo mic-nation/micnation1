@@ -22,6 +22,30 @@
       font-size: 1.1em;
       text-align: center;
     }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    button {
+      background: #00aaff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0088cc;
+    }
   </style>
 </head>
 
@@ -29,12 +53,7 @@
   <h2>Contacter MicNation 📧</h2>
   <p class="intro">Remplissez ce formulaire pour nous envoyer un message. Nous vous répondrons rapidement.</p>
 
-  <!-- Formulaire de contact MicNation -->
-  <form 
-    action="https://formspree.io/f/mvzplaad"
-    method="POST"
-    class="contact-form"
-  >
+  <form action="https://formspree.io/f/mvzplaad" method="POST">
     <label>
       Nom :
       <input type="text" name="nom" required>
