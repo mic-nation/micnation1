@@ -463,3 +463,8 @@ nav ul li a[href="contact.html"] {
   50% { color: #00ffff; text-shadow: 0 0 15px #00ffff; }
   100% { color: #fff; text-shadow: none; }
 }
+
+body {
+  background: #f9f9f9;
+  color: #222;
+}
