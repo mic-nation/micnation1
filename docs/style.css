@@ -505,3 +505,11 @@ nav ul li a[href="contact.html"] {
   color: #555;
   margin: 10px auto;
 }
+
+body {
+  background-image: url("pictures/kinshasa.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
