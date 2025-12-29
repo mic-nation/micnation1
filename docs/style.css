@@ -483,3 +483,25 @@ nav ul li a[href="contact.html"] {
     text-align: center;
   }
 </style>
+
+.artiste {
+  margin: 40px auto;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.artiste h2 {
+  color: #00aaff;
+}
+
+.artiste img {
+  margin: 15px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.artiste blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 10px auto;
+}
