@@ -507,6 +507,10 @@ nav ul li a[href="contact.html"] {
 }
 
 body {
+.intro {
+  padding: 20px;
+  text-align: center;
+}
   background-image: url("pictures/kinshasa.jpg");
   background-size: cover;
   background-position: center;
