@@ -581,3 +581,19 @@ body {
   font-size: 1.8em;
   margin-bottom: 10px;
 }
+
+.bonne-annee {
+  background: linear-gradient(-45deg, #ff0077, #ffcc00, #00ccff, #6600ff);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
