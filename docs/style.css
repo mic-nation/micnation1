@@ -518,3 +518,14 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+.galerie .grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.galerie img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
