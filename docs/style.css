@@ -562,3 +562,22 @@ body {
   text-align: center;
   box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 15px #f0f;
+  }
+  50% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #f0f;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 15px #f0f;
+  }
+}
+
+.bonne-annee h2 {
+  animation: glow 2s infinite;
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
