@@ -586,7 +586,7 @@ body {
   background: linear-gradient(-45deg, #ff0077, #ffcc00, #00ccff, #6600ff);
   background-size: 400% 400%;
   animation: gradientMove 10s ease infinite;
-  color: #fff;
+  color: #c6f7c6; /* vert léger */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
