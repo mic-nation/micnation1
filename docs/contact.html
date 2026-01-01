@@ -41,6 +41,7 @@
       color: #fff;
       border: none;
       cursor: pointer;
+      border-radius: 5px;
     }
 
     button:hover {
@@ -50,22 +51,22 @@
 </head>
 
 <body>
-  <h2>Contacter MicNation 📧</h2>
+  <h2>Contacter MicNation ✉️</h2>
   <p class="intro">Remplissez ce formulaire pour nous envoyer un message. Nous vous répondrons rapidement.</p>
 
   <form action="https://formspree.io/f/mvzplaad" method="POST">
     <label>
-      Nom :
+      Votre nom :
       <input type="text" name="nom" required>
     </label>
 
     <label>
-      Email :
+      Votre email :
       <input type="email" name="email" required>
     </label>
 
     <label>
-      Message :
+      Votre message :
       <textarea name="message" rows="5" required></textarea>
     </label>
 
@@ -74,4 +75,4 @@
     <button type="submit">Envoyer</button>
   </form>
 </body>
-</html> 
+</html>
