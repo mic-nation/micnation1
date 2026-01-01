@@ -619,3 +619,13 @@ body {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
+.lien-bouton {
+  color: #007BFF; /* Bleu standard */
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+.lien-bouton:hover {
+  color: #0056b3; /* Bleu foncé au survol */
+}
