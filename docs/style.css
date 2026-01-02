@@ -787,3 +787,28 @@ body {
   margin-right: 8px;
   vertical-align: middle;
 }
+
+.facebook-btn a {
+  display: inline-block;
+  background: #1877f2;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  box-shadow: 0 0 10px rgba(24, 119, 242, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: pulseBtn 2s infinite;
+}
+
+.facebook-btn a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(24, 119, 242, 0.6);
+}
+
+@keyframes pulseBtn {
+  0% { box-shadow: 0 0 10px rgba(24, 119, 242, 0.4); }
+  50% { box-shadow: 0 0 20px rgba(24, 119, 242, 0.8); }
+  100% { box-shadow: 0 0 10px rgba(24, 119, 242, 0.4); }
+}
