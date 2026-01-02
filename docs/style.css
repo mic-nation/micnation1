@@ -609,7 +609,7 @@ body {
 .marquee span {
   display: inline-block;
   white-space: nowrap;
-  animation: defilement 50s linear infinite;
+  animation: defilement 30s linear infinite;
   color: #c6f7c6;
   font-weight: bold;
   font-size: 1.1em;
