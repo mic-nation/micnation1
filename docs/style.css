@@ -891,3 +891,25 @@ body {
   50% { box-shadow: 0 0 20px rgba(37, 211, 102, 0.8); }
   100% { box-shadow: 0 0 10px rgba(37, 211, 102, 0.4); }
 }
+
+.message-talents {
+  background: linear-gradient(135deg, #1a1a1a, #333);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.message-talents h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ff0077;
+  text-shadow: 0 0 10px rgba(255,0,119,0.5);
+}
+
+.message-talents p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
