@@ -950,3 +950,44 @@ body {
   50% { opacity: 0.8; transform: scale(1.02); }
   100% { opacity: 1; }
 }
+
+.message-talents {
+  background: linear-gradient(135deg, #111, #222);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.message-talents::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0, 0, 255, 0.3), rgba(255, 0, 0, 0.3));
+  animation: moveLight 6s linear infinite;
+  z-index: 0;
+}
+
+.message-talents h2,
+.message-talents p {
+  position: relative;
+  z-index: 1;
+  animation: pulseText 3s infinite;
+}
+
+@keyframes moveLight {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulseText {
+  0% { text-shadow: 0 0 10px #00f, 0 0 10px #f00; }
+  50% { text-shadow: 0 0 20px #00f, 0 0 20px #f00; }
+  100% { text-shadow: 0 0 10px #00f, 0 0 10px #f00; }
+}
